@@ -1,0 +1,47 @@
+/* CSSTerm.com Flyout CSS menu */
+
+#flyout_menu {
+	font-weight: 600;
+	width: 200px; }
+
+#flyout_menu ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+#flyout_menu ul li.hover,
+#flyout_menu ul li:hover { position: relative; z-index: 599; }
+
+#flyout_menu ul ul{
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 598;
+}
+
+#flyout_menu ul li:hover > ul { visibility: visible; }
+
+#flyout_menu ul ul { top: 0; left: 100%; }
+
+#flyout_menu span, #flyout_menu a {
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none; }
+
+#flyout_menu li { background: #005555; }
+#flyout_menu li:hover, #flyout_menu li.active { background: #5FD367; }
+
+#flyout_menu a {
+    color: #FFF;
+    line-height: 160%;
+    padding: 16px 8px 16px 28px;
+    width: 164px; }
+
+#flyout_menu ul ul li {
+	background: #006C6C;
+	border-bottom: 1px solid #007171; }
+
+#flyout_menu ul ul li:hover { background: #5FD367; }
