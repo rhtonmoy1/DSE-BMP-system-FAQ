@@ -23,12 +23,17 @@
   background-color:hsl(207, 84%, 90%);
   color: hsl(130, 94%, 13%);
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
-  border: none;
-  text-align: left;
+  border: 10px;
+  text-align: justify;
+   text-justify: inter-word;
+ 
   outline: none;
   font-size: 25px;
+      -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px
 }
 
 .active, .collapsible:hover {
@@ -48,11 +53,42 @@
 }
 
 .content {
-  padding: 0 18px;
-  max-height: 0;
+    color: black;
+  padding: 0%;
+  max-height: 10px;
+  border: 10px;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: hsl(207, 84%, 90%);
+  margin: 10px;
+  
+/*  transition: max-height 0.2s ease-out;*/
+/*  background-color: hsl(207, 84%, 90%);*/
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 </style>
 
@@ -72,13 +108,23 @@
       class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg"
     >
       <ul class="cd-faq__categories">
-        <li>
+          
+          <li>
           <a
             class="cd-faq__category cd-faq__category-selected truncate"
-            href="#login"
+            href="#about"
+            >About</a
+          >
+        </li>
+          
+             <li>
+          <a class="cd-faq__category truncate" href="#login"
             >Login</a
           >
         </li>
+          
+          
+        
         <li>
           <a class="cd-faq__category truncate" href="#landingPage"
             >Landing Page</a
@@ -121,12 +167,98 @@
       <div class="cd-faq__items">
           
           
+          <!-- About Start-->
+          
+           <ul id="about" class="cd-faq__group">
+            
+            
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">About</h2></li>
+                
+          <button class="collapsible">Where should we send an email when we face Technical problems?</button>
+          
+          <div class="content">
+            <p>  <br />
+                  bpm@dse.com.bd
+                  <br /><br />
+                  
+                </div>
+                <button class="collapsible">Where should I call for support?</button>
+          <div class="content">
+               <p> <br />
+               <h3>For Technical Issue </h3>
+          
+                   IT: 📞1973,1974,1976,1977,1978 <br/><br/>
+                   
+                   <h3>For Business Issue</h3>
+                   
+                   Listing Affairs: 📞1702 -1715 <br/>
+                   Market Operations: 📞1501-1505 
+          </div>
+            <button class="collapsible">Where can I get previous training videos?</button>
+          <div class="content">
+                <p><br />
+                    You can get the training videos and other related contents in our Issuer group on Facebook. To join the group, click on the following Facebook page link.<br/><br/>
+                <button class="button button1"><h3><a href="https://www.facebook.com/dsebpm/groups">Facebook!</a></button></h3><br/>
+             </br>
+             Submit a join request by providing valid information about you and your organization.<br/>
+          </div>
+
+          <li >
+              
+              <button class="collapsible">When and how should I join the training conference?</button>
+          <div class="content">
+                <p><br />
+                    You are requested to attend training on Digital Submission and Dissemination Platform of DSE at 3:00pm. Please find the online training details below. same link for every training
+                    Please click to access:
+                    <br/><br/>
+                    
+             </br>
+                <button class="button button1"><h3><a href="https://us06web.zoom.us/j/81630856898?pwd=b2hQRDUrcUEvZk1mUXhJenBmUDRDZz09#success">Zoom!</a></button></h3><br/>
+                
+             </br>
+                  
+                    Meeting ID: 816 3085 6898<br/>
+                    Passcode: 145843
+                    
+               
+                </p>  <p> <br/><br/></p>        </div>
+
+          <li class="cd-faq__item">
+
+
+        </ul>
+          
+          
+          <!-- About End-->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           <!--Login Start -->
 		
         <ul id="login" class="cd-faq__group">
             
             
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">Login</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Login</h2></li>
                 
           <button class="collapsible">How do I login?</button>
           
@@ -168,7 +300,7 @@
                   the user will not be able to log in.
                 </p>          </div>
 
-          <li class="cd-faq__item">
+          <li >
               
               <button class="collapsible">Where is the facebook link?</button>
           <div class="content">
@@ -177,7 +309,7 @@
 
                   <img src="<c:url value='/static/images/Pic/FB link.PNG'/>"/>
                
-                </p>          </div>
+                </p>      <p> <br/><br/></p>    </div>
 
           <li class="cd-faq__item">
 
@@ -191,7 +323,7 @@
         
 
         <ul id="landingPage" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">Landing Page</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Landing Page</h2></li>
           
           
         
@@ -261,7 +393,9 @@
                                 <img src="<c:url value='/static/images/Pic/ProfileUpdate.PNG'/>"/>
 				
 
-                </p></div>
+                </p>
+                <p> <br/><br/></p>
+                </div>
 
         </ul>
                                 
@@ -272,7 +406,7 @@
                                     <!--User Management Start -->
 
         <ul id="userManagement" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">User Management</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">User Management</h2></li>
             <button class="collapsible">What is ADMIN user?</button>
             <div class="content">
                 <p><br/>
@@ -364,7 +498,7 @@
                   ● Approve : This is the highest level of permission. Users can read, write, execute, check, verify and 
                               approve any entry.
 
-                </p>            </div>
+                </p>      <p> <br/><br/></p>      </div>
                   
         </ul>
                    <!--User Management End -->
@@ -377,7 +511,7 @@
                    
 
         <ul id="query" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">Upload/Query</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Upload/Query</h2></li>
           
           
           
@@ -417,7 +551,7 @@
                   2. Already submitted queries are shown in the tabl<br/><br/>
                   <img src="<c:url value='/static/images/Pic/QueryForm2.PNG'/>"/>
                 
-                </p>            </div>
+                </p>     <p> <br/><br/></p>       </div>
             
           
         </ul>
@@ -428,7 +562,7 @@
                   <!-- Fundamental Start -->
 
         <ul id="fundamental" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">Fundamental</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Fundamental</h2></li>
           
           
                               <button class="collapsible">What is Fundamental Module?</button>
@@ -462,7 +596,7 @@
                   New changes cannot be made if there are pending change requests that are waiting for approval. If any 
                   request is pending then an error message will be displayed when the ‘Add New’ button is clicked.<br/><br/>
                   <img src="<c:url value='/static/images/Pic/FundamentalNewRequestError.PNG'/>"/>
-                </p>            </div>
+                </p>       <p> <br/><br/></p>     </div>
    
                 
         </ul>
@@ -472,7 +606,7 @@
          <!-- General Query Start -->
 
         <ul id="gq" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">General Query</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">General Query</h2></li>
           
           
             <button class="collapsible">What is Query Module?</button>
@@ -484,7 +618,7 @@
                   3. Search from table<br/><br/>
                   <img src="<c:url value='/static/images/Pic/QueryModule.PNG'/>"/>
                   
-                </p>            </div>
+                </p>        <p> <br/><br/></p>    </div>
 
                             <!-- End-->
 
@@ -499,7 +633,7 @@
 
 
         <ul id="news" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">News</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">News</h2></li>
           
           
           
@@ -525,7 +659,7 @@
                 <p><br/>
                   In this case, select Others in the news category then, input the title, details, and note.
               
-                </p>            </div>
+                </p>       <p> <br/><br/></p>     </div>
 
 
         </ul>
@@ -541,7 +675,7 @@
    
 
         <ul id="insider" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">Insider</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Insider</h2></li>
           
           
           
@@ -606,7 +740,7 @@
 
               
 
-                </p>            </div>
+                </p>       <p> <br/><br/></p>     </div>
           
           
           
@@ -626,7 +760,7 @@
   
         
         <ul id="gift" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">Declaration & Gift</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Declaration & Gift</h2></li>
           
           
           
@@ -678,7 +812,7 @@
                   The user has to select a declaration list from the drop-down box<br/>
                   Then the particular template for that declaration confirmation will appear and the user has to input the values 
                   as per regulation<br/>
-                </p>            </div>
+                </p>        <p> <br/><br/></p>    </div>
 
         </ul>
 
@@ -690,7 +824,7 @@
         <!-- Periodical Start-->
 
         <ul id="periodical" class="cd-faq__group">
-          <li class="cd-faq__title"><h2 style="color:rgb(109, 24, 24);font-size: 16px">Periodical</h2></li>
+          <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Periodical</h2></li>
           
                     
                       <button class="collapsible">What is Periodical Module?</button>
@@ -735,7 +869,7 @@
                   <br/>
                   Input the valid data of the form. Then click the submit button.
 
-                </p>            </div>
+                </p>         <p> <br/><br/></p>   </div>
 
 
  
