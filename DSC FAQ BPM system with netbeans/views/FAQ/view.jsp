@@ -90,6 +90,8 @@
   background-color: #4CAF50;
   color: white;
 }
+
+
 </style>
 
  <!-- Collapsible Style End-->
@@ -98,16 +100,27 @@
 
     <body>
        
-        <header class="cd-header flex flex-column flex-center" style="height: 10%">
+        <header class="cd-header flex flex-column flex-center">
       <div class="text-component text-center">
-        <h1>DSE BPM System FAQ</h1>
+        <h1>                        <a class="icondse"
+                                    href='<c:url value="/dash/view"/>'
+                                    target="_blank"
+                                    ><img
+                                      src="<c:url value='/static/images/Pic/DSE icon.png'/>" 
+                                              height="150"
+                                              width="150"
+                                  /></a>DSE BPM System FAQ</h1>
+        
+
       </div>
     </header>
 
     <section
       class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg"
+      
     >
       <ul class="cd-faq__categories">
+          
           
           <li>
           <a
@@ -678,7 +691,7 @@
           <li class="cd-faq__title"><h2 style="color:yellow;font-size: 16px">Insider</h2></li>
           
           
-          
+         
                       <button class="collapsible">How to input new insider?</button>
             <div class="content">
                 <p><br/>
@@ -741,6 +754,17 @@
               
 
                 </p>       <p> <br/><br/></p>     </div>
+                  
+                  
+            <button class="collapsible">Can I update insider BO information after approval?</button>
+            <div class="content">
+                <p><br/>
+                 
+                    Someone with the approval power can update the insider information after the previous information was cancel from the DSE end. 
+
+              
+
+                </p>       <p> <br/><br/></p>     </div>                  
           
           
           
